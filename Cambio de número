@@ -1,0 +1,18 @@
+Proceso cambioNumero
+	
+	Definir a,b,c como entero;
+	
+	Escribir "Escribe el digito a para cambiarlo";
+	Leer a;
+	
+	Escribir "EscriBe el digito b para cambiarlo";
+	Leer b;
+	
+	c<-b;
+	b<-a;
+	
+	
+	Escribir "El digito alreves: a= ",c,"b= ",a;
+
+	
+FinProceso
