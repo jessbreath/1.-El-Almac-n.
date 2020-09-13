@@ -11,8 +11,6 @@ Proceso cambioNumero
 	c<-b;
 	b<-a;
 	
-	
 	Escribir "El digito alreves: a= ",c,"b= ",a;
-
 	
 FinProceso
