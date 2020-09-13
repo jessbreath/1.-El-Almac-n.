@@ -1,9 +1,9 @@
 Proceso sin_titulo
-	Definir pago,dsctoImp,dscto, dsctoOp, totalpago,elegir Como Real;
+	Definir pago,dsctoImp,dscto, totalpago,elegir Como Real;
 	
 	pago<-100;
 	
-	Escribir "¿cual quieres que calculen primero? 1.impuesto 2.descuento";
+	Escribir "Â¿cual quieres que calculen primero? 1.impuesto 2.descuento";
 	Leer elegir;
 	
 	Si elegir=1 Entonces
