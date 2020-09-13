@@ -1,0 +1,14 @@
+Proceso formulageneral
+	
+	Definir a,b,c,resultado como reales;
+	
+	Escribir "Digita el numero a";
+	Leer a;
+	Escribir "Digita el numero b";
+	Leer b;
+	Escribir "Digite el numero c";
+	Leer c;
+	
+	resultado<-((-b+rc(b^2 - 4*a*c))/(2*a));
+	Escribir "Resultado: ", resultado;
+FinProceso
