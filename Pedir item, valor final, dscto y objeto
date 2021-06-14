@@ -1,0 +1,76 @@
+Algoritmo sin_titulo
+	Definir opc,unidades,cuaderno Como Entero;
+	Definir dsct,cua1,lib1,libro como real;
+	
+	Escribir "Escriba 1.Cuaderno y 2.Libro";
+	Leer opc;
+	Si opc < 1 O opc >2 Entonces
+	Escribir"Es un error";
+	SiNo
+		Escribir "El numero de unidades";
+		Leer unidades;
+		Si opc == 1 Entonces
+			si unidades > 24 Entonces
+				Escribir"Escogiste cuaderno";
+				//Valor original
+				cuaderno<-unidades*3;
+				Escribir "Valor original: ",cuaderno;
+				//Hallar descuento
+				dsct <- (unidades*3)*0.11;
+				Escribir "Descuento: ", dsct;
+				//Valor final 
+				cua1 <- (3*unidades - ((unidades*3)*0.11));
+				Escribir "Valor final: ",cua1;
+			SiNo
+					Si unidades < 24 o unidades >=12 Entonces
+							Escribir"Escogiste cuaderno";
+							//Valor original
+							libro<-unidades*3;
+							Escribir "Valor original: ",libro;
+							//Hallar descuento
+							dsct <- (unidades*3)*0.06;
+							Escribir "Descuento: ", dsct;
+							//Valor final 
+							cua1 <- (3*unidades - ((unidades*3)*0.06));
+							Escribir "Valor final: ",cua1;
+					SiNo
+						Escribir"No hay descuento. Debes pagar: ",(unidades*3);	
+					FinSi
+			FinSi		
+		SiNo
+			Si opc ==2 Entonces
+				Si unidades > 24 Entonces
+					
+					Escribir"Escogiste libro";
+					//Valor original
+					libro<-unidades*35;
+					Escribir "Valor original: ",libro;
+					//Hallar descuento
+					dsct <- (unidades*35)*0.18;
+					Escribir "Descuento: ", dsct;
+					//Valor final 
+					lib1 <- (35*unidades - ((unidades*35)*0.18));
+					Escribir "Valor final: ",lib1;
+				SiNo
+					Si unidades < 24 o unidades >=12 Entonces
+						Escribir"Escogiste cuaderno";
+						//Valor original
+						libro<-unidades*35;
+						Escribir "Valor original: ",libro;
+						//Hallar descuento
+						dsct <- (unidades*35)*0.08;
+						Escribir "Descuento: ", dsct;
+						//Valor final 
+						lib1 <- (35*unidades - ((unidades*35)*0.08));
+						Escribir "Valor final: ",lib1;
+					SiNo
+						Escribir "No hay descuento. Debes pagar: ",(unidades*35);	
+				
+					FinSi
+				FinSi
+			FinSi
+		FinSi
+	FinSi
+	
+	
+FinAlgoritmo
